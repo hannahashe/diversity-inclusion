@@ -89,20 +89,20 @@ h5 {
   min-height: 60vh;
   display: flex;
   align-items: center;
-  background: url(../images/placeholderhero.png) no-repeat center center;
-  background-size: cover;
+  /* background: url(../images/hero2.png) no-repeat center center;
+  background-size: cover; */
 }
 
-.hero-overlay {
+/* .hero-overlay {
   background-color: rgba(174, 248, 252, 0.4);
   padding: 2rem;
   border-radius: 0.5rem;
-}
+} */
 
-.hero h1,
+/* .hero h1,
 .hero p {
   color: var(--background-color) !important;
-}
+} */
 
 .text-primary {
   color: var(--primary-color) !important;
