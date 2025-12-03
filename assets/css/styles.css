@@ -43,8 +43,8 @@ h2 {
 }
 
 .text-primary {
-  color: red !important;
-  font-weight: 800 !important; /* make text readable for accessibility & different screen sizes */
+  color: var(--text-color) !important;
+  font-weight: 700 !important; /* make text readable for accessibility & different screen sizes */
 }
 
 /* Navbar */
@@ -78,7 +78,7 @@ h2 {
 
 /* Grid visualisation for layout */
 
-.container,
+/* .container,
 .container-fluid {
   border: solid 2px rgb(35, 37, 35);
 }
@@ -91,7 +91,7 @@ h2 {
 .col-md-6,
 .col-md-5 {
   border: solid 2px rgb(128, 128, 129);
-}
+} */
 
 /* Header and hero */
 
@@ -180,6 +180,11 @@ h2 {
 }
 
 /* Make a difference */
+
+.carousel-wrapper {
+  max-width: 450px; /* scale the images in the carousel */
+  margin: 0 auto; /* center it within its column */
+}
 
 #difference img {
   width: auto;
