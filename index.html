@@ -73,20 +73,24 @@
       <div class="container text-center content-wrapper">
         <div class="row justify-content-center hero-overlay">
           <!-- Header heading -->
-          <div class="col-12">        <h1 class="display-5 fw-semibold">
-          Build a fair, confident and future-ready organisation.
+          <div class="col-12">
+          <h1 class="display-5 fw-semibold">
+            Build a fair, confident and future-ready organisation.
         </h1>
         </div>
+        <!-- Header subheading -->
         <div class="col-12">
             <!-- Header subheading -->
-        <p class="lead mt-3 mx-auto text-primary style="max-width: 720px">
-          Find straightforward information, easy-to-follow guidance and handy
-          resources to grow diversity and inclusion in your small business,
-          social enterprise or education environment.
+        <p class="lead mt-3 mx-auto text-primary" style="max-width: 720px">
+            Find straightforward information, easy-to-follow guidance and handy
+            resources to grow diversity and inclusion in your small business,
+            social enterprise or education environment.
         </p>
-        </div> <div class="col-12">
-        <a href="#signup" class="btn btn-dark custom-btn-filled btn-lg mt-4">
-          Receive a free guidance pack
+        </div> 
+        <!-- Header newsletter call-to-action button -->
+        <div class="col-12">
+        <a href="#signup" class="btn btn-dark custom-btn-filled mt-4">
+            Receive a free guidance pack
         </a>
         </div>
       </div>
@@ -160,33 +164,62 @@ Accessible spaces and systems help everyone feel confident and able to take part
     <!-- WHY IT MATTERS / MAKE A DIFFERENCE -->
     <section id="difference" class="py-5 bg-light">
       <div class="container">
-        <h2 class="h2 mb-4 align-left">Make a difference</h2>
-        <div class="row g-4">
-          <div class="col-md-6">
+        <!-- Make a difference heading -->
+         <div class="row g-4"> <!-- Heading in it's own row -->
+          <div class="col-12"> <!-- Full width column for heading -->
+          <h2 class="h2 mb-4 align-left">Make a difference</h2>
+        </div>
+        </div>
+        <div class="row"> 
+          <!-- New row for paragraphs & images, to wrap on smaller screens and expand to full space on large screens -->
+           <!-- First subheading & paragraph -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
             <h5>For employers and small business owners</h5>
             <p class="text-primary">
-              <!-- replace with your copy -->
-Adopting inclusive practices helps small businesses build stronger, more resilient teams.
-When people feel welcome, respected and able to contribute, they’re more motivated and more likely to stay.
-Inclusion creates a healthier work culture, reduces conflict, and encourages a wider range of ideas — which leads to better decisions, better problem-solving and more creativity.
-It also helps organisations connect more effectively with their community, customers or service users.
-</p>
-<h5>For employees, volunteers and team members</h5>
-<p class="text-primary">
-Inclusive workplaces help people feel safe, valued and confident in their roles.
-When barriers are removed and differences are understood, individuals can focus on doing their best work rather than worrying about fitting in.
-Employees feel more supported, more engaged and more able to speak up.
-A sense of belonging improves wellbeing, collaboration and trust across the team.
+              Adopting inclusive practices helps small businesses build stronger, more resilient teams.
+                When people feel welcome, respected and able to contribute, they’re more motivated and more likely to stay.
+                Inclusion creates a healthier work culture, reduces conflict, and encourages a wider range of ideas — which leads to better decisions, better problem-solving and more creativity.
+                It also helps organisations connect more effectively with their community, customers or service users.
+                </p>
+                </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+        <!-- Second subheading & paragraph -->  
+            <h5>For employees, volunteers and team members</h5>
+            <p class="text-primary">
+                Inclusive workplaces help people feel safe, valued and confident in their roles.
+                When barriers are removed and differences are understood, individuals can focus on doing their best work rather than worrying about fitting in.
+                Employees feel more supported, more engaged and more able to speak up.
+                A sense of belonging improves wellbeing, collaboration and trust across the team.
             </p>
           </div>
-                    <div class="col-md-5">
-            <!-- Placeholder image -->
-            <img
-            src="assets/images/placeholdertips.png"
-              class="img-fluid"
-              alt="Placeholder image representing making a difference"
-            >
-            <!-- Bootstrap class img-fluid suggested by ai for responsive images instead of using width and min-width attribute -->
+          <!-- Carousel of images -->
+          <div class="col-sm-12 col-md-12 col-lg-4">
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-inner">
+    <!-- First carousel image -->
+    <div class="carousel-item active">
+      <img src="assets/images/mixedgeneric.png" class="d-block w-100" alt="...">
+    </div>
+    <!-- Second carousel image -->
+    <div class="carousel-item">
+      <img src="assets/images/mixedgenerichero.png" class="d-block w-100" alt="...">
+    </div>
+    <!-- Third carousel image -->
+    <div class="carousel-item">
+      <img src="assets/images/hero3.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <!-- Carousel controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
           </div>
         </div>
       </div>

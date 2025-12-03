@@ -39,17 +39,21 @@ h5 {
 }
 
 h2 {
- text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .text-primary {
-  color: var(--primary-color) !important;
+  color: red !important;
+  font-weight: 800 !important; /* make text readable for accessibility & different screen sizes */
 }
+
 
 /* Navbar */
 
 .navbar {
-  background-color: var(--secondary-color); /* navbar custom styling, color, text */
+  background-color: var(
+    --secondary-color
+  ); /* navbar custom styling, color, text */
   text-transform: lowercase;
   font-weight: bold;
 }
@@ -75,18 +79,20 @@ h2 {
 
 /* Grid visualisation for layout */
 
-/* .container,
+.container,
 .container-fluid {
   border: solid 2px rgb(35, 37, 35);
 }
 .row {
   border: solid 2px rgb(94, 95, 95);
 }
+
+.col,
 .col-12,
 .col-md-6,
 .col-md-5 {
   border: solid 2px rgb(128, 128, 129);
-} */
+}
 
 /* Header and hero */
 
@@ -95,7 +101,7 @@ h2 {
   display: flex;
   align-items: center;
   background: url(../images/hero3.png) no-repeat center center;
-  background-size: cover; */
+  background-size: cover;
 }
 
 .hero-overlay {
@@ -145,7 +151,6 @@ h2 {
   border: solid 2px var(--background-color);
 }
 
-
 /* Specific Sections Styling */
 
 /* Cards */
@@ -163,8 +168,8 @@ h2 {
 .card {
   background-color: var(--lightergrey);
   border-radius: 20px;
-   transition: all 0.3s ease-in-out;
-   font-size: 0.9rem;
+  transition: all 0.3s ease-in-out;
+  font-size: 0.9rem;
 }
 
 .card:hover {
