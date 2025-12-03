@@ -3,19 +3,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Quicksand:wght@300..700&display=swap");
 /* Body font - Quicksand */
 
-/* Colour Pallet */
+/* Colour Pallette */
 :root {
   --primary-color: #1e2a5e;
   --secondary-color: #1a8f8f;
   --background-color: #ced1e3;
   --text-color: #333333;
   --accent-color: #24c9c9;
+  --lightergrey: #f6f6f6;
 }
+
 /* Global styles */
-/* Positioning & Layout */
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /* smooth scrolling for anchor links */
 }
 
 body {
@@ -28,25 +29,36 @@ section {
   scroll-margin-top: 80px; /* so anchors don't hide behind navbar */
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--secondary-color) !important;
+  font-family: "Funnel Display", sans-serif;
+}
+
+h2 {
+ text-transform: uppercase;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+/* Navbar */
+
 .navbar {
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color); /* navbar custom styling, color, text */
   text-transform: lowercase;
   font-weight: bold;
 }
 
 .navbar .nav-link :hover {
-  color: var(--background-color) !important;
+  color: var(--background-color) !important; /* navbar link hover color */
 }
 
-#resources a {
-  color: var(--text-color);
-  font-weight: bold;
-  text-decoration: none;
-}
-
-#resources a:hover {
-  color: var(--accent-color);
-}
+/* Logo styling */
 
 .brand-icon {
   font-size: 2.5rem;
@@ -63,7 +75,7 @@ section {
 
 /* Grid visualisation for layout */
 
-.container,
+/* .container,
 .container-fluid {
   border: solid 2px rgb(35, 37, 35);
 }
@@ -74,18 +86,9 @@ section {
 .col-md-6,
 .col-md-5 {
   border: solid 2px rgb(128, 128, 129);
-}
+} */
 
-/* Icons, font */
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  color: var(--secondary-color) !important;
-  font-family: "Funnel Display", sans-serif;
-}
+/* Header and hero */
 
 .hero {
   min-height: 60vh;
@@ -110,31 +113,10 @@ h5 {
   font-weight: bold;
 }
 
-
 .content-wrapper {
   max-width: 1100px; /* or 900px, 1200px etc. */
   margin: 0 auto; /* centers the content */
   padding: 0 1.5rem; /* mobile-friendly side padding */
-}
-
-.text-primary {
-  color: var(--primary-color) !important;
-}
-
-.newsletter-form .form-control {
-  margin-bottom: 0.75rem;
-}
-
-.icon-circle {
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 5px solid var(--accent-color);
-  margin: 0 auto;
-  font-size: 2rem;
 }
 
 /* Buttons */
@@ -161,4 +143,68 @@ h5 {
   background-color: var(--secondary-color);
   color: var(--background-color);
   border: solid 2px var(--background-color);
+}
+
+
+/* Specific Sections Styling */
+
+/* Cards */
+
+#demystifying {
+  margin-top: -2rem; /* adjust spacing for section heading under hero. */
+}
+
+.card-icon {
+  font-size: 600% !important;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.card {
+  background-color: var(--lightergrey);
+  border-radius: 20px;
+   transition: all 0.3s ease-in-out;
+   font-size: 0.9rem;
+}
+
+.card:hover {
+  box-shadow: 0 1.5rem 1rem var(--secondary-color);
+}
+
+.card-title {
+  display: none;
+}
+
+/* Make a difference */
+
+/* Practical tips */
+
+/* Resources */
+
+#resources a {
+  color: var(--text-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#resources a:hover {
+  color: var(--accent-color);
+}
+
+.icon-circle {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid var(--accent-color);
+  margin: 0 auto;
+  font-size: 2rem;
+}
+
+/* Newsletter form */
+
+.newsletter-form .form-control {
+  margin-bottom: 0.75rem;
 }
