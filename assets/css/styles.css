@@ -194,6 +194,24 @@ h2 {
 
 /* Practical tips */
 
+.list-boxes {
+  border-radius: 20px;
+}
+
+.list-group-item {
+  border: none;
+  font-size: 1.2rem;
+  background-color: var(--lightergrey);
+}
+.list-group-item:hover {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  cursor: pointer;
+}
+.list-group-item .fw-bold {
+  margin-bottom: 0.5rem;
+}
+
 /* Resources */
 
 #resources a {
