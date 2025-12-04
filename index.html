@@ -70,7 +70,7 @@
         </div>
       </div>
     </nav>
-
+    <main>
     <!-- Header & hero section -->
     <section id="hero" class="hero section py-5">
       <div class="container text-center content-wrapper">
@@ -309,31 +309,29 @@ Accessible spaces and systems help everyone feel confident and able to take part
           <div class="col-6 col-md-3">
             <a href="https://analysisfunction.civilservice.gov.uk/government-statistical-service-and-statistician-group/governance/diversity-and-inclusion/diversity-and-inclusion-resources/"  target="_blank" rel="noopener">
                 <i class="fa-solid fa-book resource-icon" aria-hidden="true"></i>
-                </a>
-             
               <p class="mt-2 mb-0">Guides</p>
-            </a>
+               </a>
           </div>
           <div class="col-6 col-md-3">
                <a href="https://www.acas.org.uk/equality-diversity-and-inclusion-acas-training-courses"  target="_blank" rel="noopener">
                 <i class="fa-solid fa-dumbbell resource-icon" aria-hidden="true"></i>
-               </a>
+              
               <p class="mt-2 mb-0">Training</p>
-            </a>
+               </a>
           </div>
           <div class="col-6 col-md-3">
             <a href="https://enspire.ox.ac.uk/the-equality-diversity-and-inclusion-edi-toolkit" target="_blank" rel="noopener">
                 <i class="fa-solid fa-screwdriver-wrench resource-icon" aria-hidden="true"></i>
-              </a>
+            
               <p class="mt-2 mb-0">Toolkits</p>
-            </a>
+               </a>
           </div>
           <div class="col-6 col-md-3">
             <a href="https://inklusiiv.com/inclusion-in-the-workplace-whitepaper/?utm_term=diversity%20equity%20and%20inclusion%20in%20the%20workplace&utm_campaign=Inklusion+in+the+Workplace+WP&utm_source=adwords&utm_medium=ppc&hsa_acc=1163173547&hsa_cam=23007833759&hsa_grp=188816711401&hsa_ad=773496300712&hsa_src=g&hsa_tgt=kwd-852887403490&hsa_kw=diversity%20equity%20and%20inclusion%20in%20the%20workplace&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=23007833759&gclid=Cj0KCQiA_8TJBhDNARIsAPX5qxTKtk35Wlejhyx8WMPX5kI26R7SWt6jZAn9IDr_ZAWjhiaRgqXci8QaAusOEALw_wcB" target="_blank" rel="noopener">
                 <i class="fa-solid fa-brain resource-icon" aria-hidden="true"></i>
-              </a>
+          
               <p class="mt-2 mb-0">Further reading</p>
-            </a>
+               </a>
           </div>
         </div>
       </div>
@@ -360,18 +358,23 @@ Accessible spaces and systems help everyone feel confident and able to take part
               <input
                 type="email"
                 id="email"
+                name="email"
                 class="form-control"
                 placeholder="Email (required)"
+                autocomplete="email"
                 required
               />
             </div>
+
             <div class="col-md-6">
               <label for="firstName" class="visually-hidden">First name - required</label>
               <input
                 type="text"
                 id="firstName"
+                name="firstName"
                 class="form-control"
                 placeholder="First name (required)"
+                autocomplete="given-name"
                 required
               />
             </div>
@@ -384,7 +387,9 @@ Accessible spaces and systems help everyone feel confident and able to take part
             <input
               type="text"
               id="organisation"
+              name="organisation"
               class="form-control"
+              autocomplete="organization"
               placeholder="Parent organisation (optional)"
             />
           </div>
@@ -397,6 +402,7 @@ Accessible spaces and systems help everyone feel confident and able to take part
         </form>
       </div>
     </section>
+    </main>
 
     <!-- FOOTER -->
        <footer class="py-4" id="contact-footer">
@@ -405,11 +411,14 @@ Accessible spaces and systems help everyone feel confident and able to take part
          <!-- First row for logo & social media icons -->
         <div class="row gy-3">
           <!-- Logo -->
-           <a href="index.html#top">
-          <div class="col col-sm-6 justify-content-start d-flex">
-            <i class="bi bi-people brand-icon"></i>
-            </a>
+           <div class="col col-sm-6 justify-content-start d-flex">
+             <a href="index.html#top" class="text-decoration-none">
+              <i class="bi bi-arrow-up brand-icon"></i>
+               <i class="bi bi-people brand-icon" aria-hidden="true"></i>
+               <span class="visually-hidden">Back to top</span>
+             </a>
           </div>
+
           <!-- Social media icons -->
           <div class="col col-sm-6 justify-content-end d-flex">
             <a href="https://www.instagram.com" class="text-light me-3" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram social-icon"></i></a>
