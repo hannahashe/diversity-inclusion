@@ -1,11 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
-/* Heading font - Funnel Display */
 @import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Quicksand:wght@300..700&display=swap");
+/* Heading font - Funnel Display */
 /* Body font - Quicksand */
 
 /* Colour Pallette */
 :root {
-  --primary-color: #1e2a5e;
   --secondary-color: #1a8f8f;
   --background-color: #ced1e3;
   --text-color: #333333;
@@ -34,13 +32,17 @@ h2,
 h3,
 h4,
 h5 {
-  color: var(--secondary-color) !important;
+  color: var(--secondary-color);
   font-family: "Funnel Display", sans-serif;
 }
 
 .h2 {
   text-transform: lowercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: start;
 }
 
@@ -59,7 +61,8 @@ h5 {
   font-weight: bold;
 }
 
-.navbar .nav-link :hover {
+.navbar .nav-link:hover,
+.navbar .nav-link:focus-visible {
   color: var(--background-color) !important; /* navbar link hover color */
 }
 
@@ -70,8 +73,9 @@ h5 {
   color: #ffffff;
 }
 
-.brand-logo-hover:hover {
-  color: var(--text-color) !important;
+.brand-logo-hover:hover .navbar-brand,
+.brand-logo-hover:hover .brand-icon {
+  color: var(--text-color-color) !important; /* logo hover color */
 }
 
 .lighter-weight {
@@ -99,7 +103,11 @@ h5 {
 
 .hero {
   min-height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background: url(../images/hero3.png) no-repeat center center;
   background-size: cover;
@@ -173,6 +181,8 @@ h5 {
 .card {
   background-color: var(--lightergrey);
   border-radius: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   font-size: 0.9rem;
 }
@@ -180,7 +190,10 @@ h5 {
 .card:hover,
 .card:focus,
 .card:active {
+  -webkit-box-shadow: 0 1.5rem 1rem var(--secondary-color);
   box-shadow: 0 1.5rem 1rem var(--secondary-color);
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
   transform: translateY(-5px);
 }
 
@@ -212,12 +225,9 @@ h5 {
   font-size: 1.2rem;
   background-color: var(--lightergrey);
 }
-.list-group-item:hover,
-.list-group-item:focus,
-.list-group-item:active {
+.list-group-item:hover {
   background-color: var(--secondary-color);
-  color: var(--background-color);
-  cursor: pointer;
+  color: #ffffff; /* Changed text colour on hover to meet contrast standards */
 }
 
 .list-group-item .fw-bold {
@@ -249,6 +259,7 @@ h5 {
 
 .form-control:focus {
   border-color: var(--accent-color);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(36, 201, 201, 0.25);
   box-shadow: 0 0 0 0.2rem rgba(36, 201, 201, 0.25);
 }
 
@@ -275,7 +286,11 @@ h5 {
 }
 
 .address {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
