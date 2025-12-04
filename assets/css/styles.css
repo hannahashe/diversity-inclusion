@@ -134,7 +134,9 @@ h5 {
   border: solid 2px var(--background-color);
 }
 
-.custom-btn-filled:hover {
+.custom-btn-filled:hover,
+.custom-btn-filled:focus,
+.custom-btn-filled:active {
   background-color: var(--background-color);
   color: var(--primary-color);
   border: solid 2px var(--secondary-color);
@@ -146,7 +148,9 @@ h5 {
   border: solid 2px var(--background-color);
 }
 
-.custom-btn-outline:hover {
+.custom-btn-outline:hover,
+.custom-btn-outline:focus,
+.custom-btn-outline:active {
   background-color: var(--secondary-color);
   color: var(--background-color);
   border: solid 2px var(--background-color);
@@ -173,7 +177,9 @@ h5 {
   font-size: 0.9rem;
 }
 
-.card:hover {
+.card:hover,
+.card:focus,
+.card:active {
   box-shadow: 0 1.5rem 1rem var(--secondary-color);
   transform: translateY(-5px);
 }
@@ -206,11 +212,14 @@ h5 {
   font-size: 1.2rem;
   background-color: var(--lightergrey);
 }
-.list-group-item:hover {
+.list-group-item:hover,
+.list-group-item:focus,
+.list-group-item:active {
   background-color: var(--secondary-color);
   color: var(--background-color);
   cursor: pointer;
 }
+
 .list-group-item .fw-bold {
   margin-bottom: 0.5rem;
 }
