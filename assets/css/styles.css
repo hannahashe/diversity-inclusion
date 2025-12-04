@@ -4,11 +4,13 @@
 
 /* Colour Pallette */
 :root {
-  --secondary-color: #1a8f8f;
-  --background-color: #ced1e3;
-  --text-color: #333333;
-  --accent-color: #24c9c9;
-  --lightergrey: #f6f6f6;
+  --primary-color: #3f4043; /* deep navy */
+  --secondary-color: #1a8f8f; /* teal */
+  --secondary-strong: #0d4f4f; /* darker teal */
+  --background-color: #ced1e3; /* soft lilac-grey */
+  --text-color: #333333; /* dark grey */
+  --accent-color: #24c9c9; /* bright aqua */
+  --lightergrey: #f6f6f6; /* very light grey */
 }
 
 /* Global styles */
@@ -32,7 +34,7 @@ h2,
 h3,
 h4,
 h5 {
-  color: var(--secondary-color);
+  color: var(--primary-color) !important;
   font-family: "Funnel Display", sans-serif;
 }
 
@@ -137,7 +139,7 @@ h5 {
 /* Buttons */
 
 .custom-btn-filled {
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-strong);
   color: var(--background-color);
   border: solid 2px var(--background-color);
 }
@@ -147,19 +149,19 @@ h5 {
 .custom-btn-filled:active {
   background-color: var(--background-color);
   color: var(--primary-color);
-  border: solid 2px var(--secondary-color);
+  border: solid 2px var(--secondary-strong);
 }
 
 .custom-btn-outline {
   background-color: var(--background-color);
-  color: var(--secondary-color);
+  color: var(--secondary-strong);
   border: solid 2px var(--background-color);
 }
 
 .custom-btn-outline:hover,
 .custom-btn-outline:focus,
 .custom-btn-outline:active {
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-strong);
   color: var(--background-color);
   border: solid 2px var(--background-color);
 }
@@ -170,12 +172,6 @@ h5 {
 
 #demystifying {
   margin-top: -1rem; /* adjust spacing for section heading under hero. */
-}
-
-.card-icon {
-  font-size: 600% !important;
-  color: var(--secondary-color);
-  margin-bottom: 1rem;
 }
 
 .card {
@@ -223,10 +219,10 @@ h5 {
 .list-group-item {
   border: none;
   font-size: 1.2rem;
-  background-color: var(--lightergrey);
 }
+
 .list-group-item:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-strong);
   color: #ffffff; /* Changed text colour on hover to meet contrast standards */
 }
 
