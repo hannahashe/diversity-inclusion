@@ -61,7 +61,7 @@
               <a class="nav-link" href="#resources">Find out more</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#contact-footer">Contact</a>
             </li>
             <li class="nav-item ms-md-2">
               <a class="btn btn-dark custom-btn-filled" href="#signup">Sign up for more</a>
@@ -313,33 +313,31 @@ Accessible spaces and systems help everyone feel confident and able to take part
         </p>
         <div class="row g-4 justify-content-center">
           <div class="col-6 col-md-3">
-            <a href="#" class="text-decoration-none">
-              
+            <a href="https://analysisfunction.civilservice.gov.uk/government-statistical-service-and-statistician-group/governance/diversity-and-inclusion/diversity-and-inclusion-resources/"  target="_blank" rel="noopener">
                 <i class="fa-solid fa-book resource-icon" aria-hidden="true"></i>
+                </a>
              
               <p class="mt-2 mb-0">Guides</p>
             </a>
           </div>
           <div class="col-6 col-md-3">
-            <a href="#" class="text-decoration-none">
-              
+               <a href="https://www.acas.org.uk/equality-diversity-and-inclusion-acas-training-courses"  target="_blank" rel="noopener">
                 <i class="fa-solid fa-dumbbell resource-icon" aria-hidden="true"></i>
-              
+               </a>
               <p class="mt-2 mb-0">Training</p>
             </a>
           </div>
           <div class="col-6 col-md-3">
-            <a href="#" class="text-decoration-none">
-              
+            <a href="https://enspire.ox.ac.uk/the-equality-diversity-and-inclusion-edi-toolkit" target="_blank" rel="noopener">
                 <i class="fa-solid fa-screwdriver-wrench resource-icon" aria-hidden="true"></i>
-              
+              </a>
               <p class="mt-2 mb-0">Toolkits</p>
             </a>
           </div>
           <div class="col-6 col-md-3">
-            <a href="#" class="text-decoration-none">
+            <a href="https://inklusiiv.com/inclusion-in-the-workplace-whitepaper/?utm_term=diversity%20equity%20and%20inclusion%20in%20the%20workplace&utm_campaign=Inklusion+in+the+Workplace+WP&utm_source=adwords&utm_medium=ppc&hsa_acc=1163173547&hsa_cam=23007833759&hsa_grp=188816711401&hsa_ad=773496300712&hsa_src=g&hsa_tgt=kwd-852887403490&hsa_kw=diversity%20equity%20and%20inclusion%20in%20the%20workplace&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=23007833759&gclid=Cj0KCQiA_8TJBhDNARIsAPX5qxTKtk35Wlejhyx8WMPX5kI26R7SWt6jZAn9IDr_ZAWjhiaRgqXci8QaAusOEALw_wcB" target="_blank" rel="noopener">
                 <i class="fa-solid fa-brain resource-icon" aria-hidden="true"></i>
-              
+              </a>
               <p class="mt-2 mb-0">Further reading</p>
             </a>
           </div>
@@ -364,7 +362,7 @@ Accessible spaces and systems help everyone feel confident and able to take part
         >
           <div class="row g-2"> 
             <div class="col-md-6">
-              <label for="email" class="visually-hidden">Email</label>
+              <label for="email" class="visually-hidden">Email - required</label>
               <input
                 type="email"
                 id="email"
@@ -374,7 +372,7 @@ Accessible spaces and systems help everyone feel confident and able to take part
               />
             </div>
             <div class="col-md-6">
-              <label for="firstName" class="visually-hidden">First name</label>
+              <label for="firstName" class="visually-hidden">First name - required</label>
               <input
                 type="text"
                 id="firstName"
@@ -387,7 +385,7 @@ Accessible spaces and systems help everyone feel confident and able to take part
 
           <div class="mt-2">
             <label for="organisation" class="visually-hidden"
-              >Parent organisation</label
+              >Parent organisation - optional</label
             >
             <input
               type="text"
@@ -407,36 +405,49 @@ Accessible spaces and systems help everyone feel confident and able to take part
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-dark text-light py-4">
+       <footer class="py-4" id="contact-footer">
       <div class="container">
-        <div class="row gy-3 align-items-center">
-          <div class="col-md-4">
-            <span class="fw-bold">Inclusive Futures</span><br />
-            <small>© 2024 Inclusive Futures. All rights reserved.</small>
-          </div>
-          <div class="col-md-4 text-md-center">
-            <a href="#" class="text-light me-3" aria-label="Instagram">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="#" class="text-light me-3" aria-label="Facebook">
-              <i class="bi bi-facebook"></i>
-            </a>
-            <a href="#" class="text-light" aria-label="Twitter / X">
-              <i class="bi bi-twitter-x"></i>
+        <!-- Bootstrap flex contrainer for positioning -->
+         <!-- First row for logo & social media icons -->
+        <div class="row gy-3">
+          <!-- Logo -->
+           <a href="index.html#top">
+          <div class="col col-sm-6 justify-content-start d-flex">
+            <i class="bi bi-people brand-icon"></i>
             </a>
           </div>
-          <div class="col-md-4 text-md-end">
-            <div><strong>Address:</strong></div>
-            <small>
-              123 Main Street, City<br />
-              State/Province, Country<br />
-              email@example.com
+          <!-- Social media icons -->
+          <div class="col col-sm-6 justify-content-end d-flex">
+            <a href="https://www.instagram.com" class="text-light me-3" aria-label="Instagram"><i class="bi bi-instagram social-icon"></i></a>
+            <a href="https://www.facebook.com" class="text-light me-3" aria-label="Facebook"><i class="bi bi-facebook social-icon"></i></a>
+            <a href="https://www.twitter.com" class="text-light" aria-label="Twitter / X"><i class="bi bi-twitter-x social-icon"></i></a>
+          </div>
+          <!-- Second row for contact information -->
+          <!-- Contact information -->
+           <div class="row mt-3">
+          <div class="col col-sm-6">
+             inclusivefutures@gmail.com <br />
+             07123 456789
+          </div>
+          <div class="col col-md-6 address">
+
+              <small>
+              123 Main Street, Nottingham<br />
+              United Kingdom <br />
+              NG1 1AA<br />
             </small>
+          </div>
+          </div>
+          <!-- Third row for copyright -->
+          <div class="row">
+            <div class="col-12">
+                          <span class="ms-2 copyright-text d-flex justify-content-center"
+              >&copy; Inclusive Futures 2025</span>
+            </div>
           </div>
         </div>
       </div>
     </footer>
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Boostrap JS to close mobile nav on link click -->

@@ -80,7 +80,7 @@ h5 {
 
 /* Grid visualisation for layout debugging  */
 
-.container,
+/* .container,
 .container-fluid {
   border: solid 2px rgb(35, 37, 35);
 }
@@ -93,7 +93,7 @@ h5 {
 .col-md-6,
 .col-md-5 {
   border: solid 2px rgb(128, 128, 129);
-}
+} */
 
 /* Header and hero */
 
@@ -241,4 +241,30 @@ h5 {
 .form-control:focus {
   border-color: var(--accent-color);
   box-shadow: 0 0 0 0.2rem rgba(36, 201, 201, 0.25);
+}
+
+/* Footer */
+
+#contact-footer {
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+
+.social-icon {
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+
+.social-icon:hover {
+  color: var(--background-color);
+}
+
+.address {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.copyright-text {
+  font-size: 0.8rem;
+  font-weight: 450;
 }
