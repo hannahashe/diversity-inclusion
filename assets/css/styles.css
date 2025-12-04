@@ -38,8 +38,10 @@ h5 {
   font-family: "Funnel Display", sans-serif;
 }
 
-h2 {
+.h2 {
   text-transform: uppercase;
+  display: flex;
+  justify-content: start;
 }
 
 .text-primary {
@@ -76,9 +78,9 @@ h2 {
   font-weight: lighter;
 }
 
-/* Grid visualisation for layout */
+/* Grid visualisation for layout debugging  */
 
-/* .container,
+.container,
 .container-fluid {
   border: solid 2px rgb(35, 37, 35);
 }
@@ -91,7 +93,7 @@ h2 {
 .col-md-6,
 .col-md-5 {
   border: solid 2px rgb(128, 128, 129);
-} */
+}
 
 /* Header and hero */
 
@@ -173,6 +175,7 @@ h2 {
 
 .card:hover {
   box-shadow: 0 1.5rem 1rem var(--secondary-color);
+  transform: translateY(-5px);
 }
 
 .card-title {
@@ -220,24 +223,22 @@ h2 {
   text-decoration: none;
 }
 
-#resources a:hover {
-  color: var(--accent-color);
+.resource-icon {
+  font-size: 4rem;
+  color: var(--secondary-color) !important;
 }
 
-.icon-circle {
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 5px solid var(--accent-color);
-  margin: 0 auto;
-  font-size: 2rem;
+.resource-icon:hover {
+  color: var(--background-color) !important;
 }
 
 /* Newsletter form */
 
 .newsletter-form .form-control {
   margin-bottom: 0.75rem;
+}
+
+.form-control:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 0.2rem rgba(36, 201, 201, 0.25);
 }
